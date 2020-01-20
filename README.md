@@ -2,8 +2,8 @@
 
 ## Build image
 
-`docker build python-webnames .`
+`docker build -t python-webnames .`
 
 ## Run image
 
-`docker start python-webnames`
+`docker run python-webnames`
