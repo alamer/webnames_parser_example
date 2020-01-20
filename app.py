@@ -9,7 +9,7 @@ page = 0
 rows = []
 while page < number_of_pages:
     page += 1
-    result = requests.get("https://www.webnames.ru/domains/deleted?page_no=2042&param={}&sorting=1".format(page),
+    result = requests.get("https://www.webnames.ru/domains/deleted?page_no={}&param=1&sorting=1".format(page),
                           headers=header)
     content = result.content
     soup = BeautifulSoup(content, "html.parser")
